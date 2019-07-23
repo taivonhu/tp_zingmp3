@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/ifo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginLeft="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:text="La"
+                />
+            <TextView
+                android:gravity="center"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:text="Pham Dinh Thai Ngann"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_marginLeft="50dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_watch_later_black_24dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ifo"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/zing" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/img"
+        android:id="@+id/lys"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="sagdjsakdba"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="jdsakdjksajd"
+            android:layout_weight="1"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="dsakhdashd"/>
+
+
+    </LinearLayout>
+
+    <SeekBar
+
+        android:id="@+id/seekBar"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/lys"
+        android:layout_marginTop="20dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_repeat_black_24dp"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_skip_previous_black_24dp"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pause_black_24dp" />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_skip_next_black_24dp"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_shuffle_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
