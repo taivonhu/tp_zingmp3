@@ -27,16 +27,17 @@
             >
 
             <TextView
+                android:id="@+id/txtTitle"
                 android:gravity="center"
                 android:layout_width="220dp"
                 android:layout_height="25dp"
-                android:text="La"
+
                 />
             <TextView
                 android:gravity="center"
                 android:layout_width="220dp"
                 android:layout_height="25dp"
-                android:text="Pham Dinh Thai Ngann"/>
+                android:text=""/>
 
         </LinearLayout>
 
@@ -88,13 +89,35 @@
 
     </LinearLayout>
 
-    <SeekBar
-
-        android:id="@+id/seekBar"
-        android:layout_width="355dp"
-        android:layout_height="48dp"
+    <TextView
+        android:id="@+id/txtStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/lys"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="00:00"
+        android:textColor="#000000" />
+    <TextView
+
+        android:id="@+id/txtEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lys"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:text="00:00"
+        android:textColor="#000000" />
+
+    <SeekBar
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/txtStart"
+        android:layout_marginTop="10dp" />
 
 
     <LinearLayout
@@ -111,17 +134,20 @@
             android:src="@drawable/ic_repeat_black_24dp"
             />
         <ImageButton
+            android:id="@+id/btnPre"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/ic_skip_previous_black_24dp"/>
 
         <ImageButton
+            android:id="@+id/btnStop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/ic_pause_black_24dp" />
         <ImageButton
+            android:id="@+id/btnNext"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
